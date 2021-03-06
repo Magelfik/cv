@@ -26,7 +26,6 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: en/cv.tex
-          latexmk_use_xelatex: true
       - uses: actions/upload-artifact@v2
         with:
           name: cv-en.pdf
