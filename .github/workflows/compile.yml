@@ -17,6 +17,8 @@ on:
 jobs:
   build_latex_en:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./en
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
