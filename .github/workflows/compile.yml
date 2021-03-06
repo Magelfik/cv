@@ -17,18 +17,17 @@ on:
 jobs:
   build_latex_en:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./en
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: en/cv.tex
+          root_file: en.tex
+          latexmk_use_xelatex: true
       - uses: actions/upload-artifact@v2
         with:
           name: cv-en.pdf
-          path: en/cv.pdf
+          path: en.pdf
         
 
