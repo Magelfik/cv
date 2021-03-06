@@ -1,5 +1,6 @@
 \documentclass{resume}
 
+\usepackage{multicol}
 \begin{document}
 
 \fontfamily{cmr}\selectfont
@@ -23,9 +24,25 @@
 }
 \end{tabularx}
 \begin{center}
-\begin{tabularx}{\linewidth}{@{}*{2}{X}@{}}
+\begin{multicols}{2}
 {
-   
+    \csection{EXPERIENCE}{\small
+        \begin{itemize}
+            \item \frcontent{REGO Avocats}{Lancy, Geneva}{System administrator in charge of internal infrastructure}{June 2019 onwards}
+            \item \frcontent{Canton of Geneva}{Intern}{Deployment and implementation of modern Technologies including a new decentralized version system.}{April to July 2017}
+        \end{itemize}
+    }
+    \csection{EDUCATION}{\small
+        \begin{itemize}
+            \item \frcontent{Bachelor of Science HES-SO}{University of Applied Sciences Western Switzerland.}{}{2020}
+        \end{itemize}
+    }
+    \csection{AWARDS \& RECOGNITION}{\small
+        \begin{itemize}
+            \item \frcontent{NextThink Challenge - LauzHack 2020}{Best project to use data to overcome the pandemic}{}{2020}
+            \item \frcontent{SwissQuote Challenge - LauzHack 2018}{Best Bitcoin financial advisor bot}{}{2018}
+        \end{itemize}
+    }
 } 
 & 
 {
